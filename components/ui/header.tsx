@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Logo from "./logo";
-
+import logo from "../../public/logo-no-bg.png"
+import Image from "next/image";
 export default function Header() {
   return (
     <header className="fixed top-2 z-30 w-full md:top-6">
@@ -15,18 +16,10 @@ export default function Header() {
           <ul className="flex flex-1 items-center justify-end gap-3">
             <li>
               <Link
-                href="/signin"
-                className="btn-sm bg-white text-gray-800 shadow-sm hover:bg-gray-50"
-              >
-                Login
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="/signup"
                 className="btn-sm bg-gray-800 text-gray-200 shadow-sm hover:bg-gray-900"
               >
-                Register
+                Contact Us
               </Link>
             </li>
           </ul>

@@ -11,11 +11,26 @@ export default function Footer({ border = false }: { border?: boolean }) {
         >
           {/* 1st block */}
           <div className="space-y-2 sm:col-span-12 lg:col-span-4">
-            <div>
+            {/* Logo and Company Name Container */}
+            <div className="flex items-center gap-3">
               <Logo />
+              {/* Vertical Line */}
+              <div className="h-12 w-px bg-gray-400"></div>
+              {/* Company Name */}
+              <div className="flex flex-col">
+                <span className="text-lg font-bold text-gray-900 uppercase tracking-wide">
+                  VALLABHA
+                </span>
+                <span className="text-sm font-medium text-gray-700 uppercase tracking-wider">
+                  <span className="text-orange-500">G</span>ANAPATHI
+                </span>
+                <span className="text-xs font-medium text-gray-600 uppercase tracking-wider">
+                  TECH PVT.LTD
+                </span>
+              </div>
             </div>
             <div className="text-sm text-gray-600">
-              &copy; Cruip.com - All rights reserved.
+              &copy; Vallabhatech.com - All rights reserved.
             </div>
           </div>
 
@@ -200,7 +215,7 @@ export default function Footer({ border = false }: { border?: boolean }) {
 
       {/* Big text */}
       <div className="relative -mt-16 h-60 w-full" aria-hidden="true">
-        <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[348px] font-bold leading-none before:bg-linear-to-b before:from-gray-200 before:to-gray-100/30 before:to-80% before:bg-clip-text before:text-transparent before:content-['Simple'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['Simple'] after:[text-shadow:0_1px_0_white]"></div>
+        <div className="pointer-events-none absolute left-1/2 -z-10 -translate-x-1/2 text-center text-[348px] font-bold leading-none before:bg-linear-to-b before:from-gray-200 before:to-gray-100/30 before:to-80% before:bg-clip-text before:text-transparent before:content-['VGT'] after:absolute after:inset-0 after:bg-gray-300/70 after:bg-clip-text after:text-transparent after:mix-blend-darken after:content-['VGT'] after:[text-shadow:0_1px_0_white]"></div>
         {/* Glow */}
         <div
           className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-2/3"

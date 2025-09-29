@@ -55,6 +55,36 @@
   --animate-line: line;
   --animate-infinite-scroll: infinite-scroll;  
 
+
+    /* VGTech Brand Colors - Orange Primary */
+  --color-vgt-orange-50: oklch(0.98 0.02 45);
+  --color-vgt-orange-100: oklch(0.95 0.05 45);
+  --color-vgt-orange-200: oklch(0.90 0.10 45);
+  --color-vgt-orange-300: oklch(0.82 0.15 45);
+  --color-vgt-orange-400: oklch(0.74 0.20 45);
+  --color-vgt-orange-500: oklch(0.66 0.25 45);  /* Main brand orange */
+  --color-vgt-orange-600: oklch(0.58 0.20 45);
+  --color-vgt-orange-700: oklch(0.50 0.18 45);
+  --color-vgt-orange-800: oklch(0.42 0.15 45);
+  --color-vgt-orange-900: oklch(0.34 0.12 45);
+  
+  /* VGTech Secondary - Professional Black/Gray */
+  --color-vgt-black: oklch(0.15 0 0);
+  --color-vgt-gray-50: oklch(0.97 0 0);
+  --color-vgt-gray-100: oklch(0.94 0 0);
+  --color-vgt-gray-200: oklch(0.88 0 0);
+  --color-vgt-gray-300: oklch(0.75 0 0);
+  --color-vgt-gray-400: oklch(0.62 0 0);
+  --color-vgt-gray-500: oklch(0.50 0 0);
+  --color-vgt-gray-600: oklch(0.38 0 0);
+  --color-vgt-gray-700: oklch(0.28 0 0);
+  --color-vgt-gray-800: oklch(0.20 0 0);
+  --color-vgt-gray-900: oklch(0.15 0 0);
+  
+  /* Override default blue with VGT orange for primary actions */
+  --color-blue-500: oklch(0.66 0.25 45);
+  --color-blue-600: oklch(0.58 0.20 45);
+
   @keyframes code-1 {
     0% {
       opacity: 0;
