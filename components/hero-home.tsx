@@ -1,70 +1,15 @@
 import Image from "next/image";
 import PageIllustration from "@/components/page-illustration";
-import Avatar01 from "@/public/images/avatar-01.jpg";
-import Avatar02 from "@/public/images/avatar-02.jpg";
-import Avatar03 from "@/public/images/avatar-03.jpg";
-import Avatar04 from "@/public/images/avatar-04.jpg";
-import Avatar05 from "@/public/images/avatar-05.jpg";
-import Avatar06 from "@/public/images/avatar-06.jpg";
 
 export default function HeroHome() {
   return (
-    <section className="relative">
+    <section className="relative" id= "hero">
       <PageIllustration />
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Hero content */}
         <div className="pb-12 pt-32 md:pb-20 md:pt-40">
           {/* Section header */}
           <div className="pb-12 text-center md:pb-16">
-            <div
-              className="mb-6 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]"
-              data-aos="zoom-y-out"
-            >
-              <div className="-mx-0.5 flex justify-center -space-x-3">
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar01}
-                  width={32}
-                  height={32}
-                  alt="Avatar 01"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar02}
-                  width={32}
-                  height={32}
-                  alt="Avatar 01"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar03}
-                  width={32}
-                  height={32}
-                  alt="Avatar 02"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar04}
-                  width={32}
-                  height={32}
-                  alt="Avatar 03"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar05}
-                  width={32}
-                  height={32}
-                  alt="Avatar 04"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar06}
-                  width={32}
-                  height={32}
-                  alt="Avatar 05"
-                />
-              </div>
-            </div>
             <h1
               className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-6xl"
               data-aos="zoom-y-out"
@@ -79,7 +24,7 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Empowering national security and patient care through cutting-edge artificial intelligence.
+                Creating tailored artificial intelligence and custom software solutions across industries to solve complex business challenges.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
@@ -98,51 +43,128 @@ export default function HeroHome() {
                       </span>
                     </span>
                   </a>
-                  {/* <a
-                    className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#0"
-                  >
-                    Learn More
-                  </a> */}
                 </div>
               </div>
             </div>
           </div>
-          {/* Hero image */}
+          {/* Hero Dashboard */}
           <div
-            className="mx-auto max-w-3xl"
+            className="mx-auto max-w-4xl"
             data-aos="zoom-y-out"
             data-aos-delay={600}
           >
-            <div className="relative aspect-video rounded-2xl bg-gray-900 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-300/.8),transparent)1]">
-              <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,var(--color-gray-600)_4.5px,transparent_0)] after:w-[41px]">
-                <span className="text-[13px] font-medium text-white">
-                  cruip.com
-                </span>
+            <div className="relative rounded-2xl bg-white p-6 shadow-2xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-300/.8),transparent)1]">
+              {/* Dashboard Header */}
+              <div className="mb-6 flex items-center justify-between border-b border-gray-200 pb-4">
+                <div className="flex items-center space-x-3">
+                  <div className="h-3 w-3 rounded-full bg-red-500"></div>
+                  <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
+                  <div className="h-3 w-3 rounded-full bg-green-500"></div>
+                  <span className="ml-4 text-sm font-medium text-gray-600">
+                    VGTech AI Solutions Portfolio
+                  </span>
+                </div>
+                <div className="text-xs text-gray-500">
+                  Multi-Domain AI Performance
+                </div>
               </div>
-              <div className="font-mono text-gray-500 [&_span]:opacity-0">
-                <span className="animate-[code-1_10s_infinite] text-gray-200">
-                  npm login
-                </span>{" "}
-                <span className="animate-[code-2_10s_infinite]">
-                  --registry=https://npm.pkg.github.com
-                </span>
-                <br />
-                <span className="animate-[code-3_10s_infinite]">
-                  --scope=@phanatic
-                </span>{" "}
-                <span className="animate-[code-4_10s_infinite]">
-                  Successfully logged-in.
-                </span>
-                <br />
-                <br />
-                <span className="animate-[code-5_10s_infinite] text-gray-200">
-                  npm publish
-                </span>
-                <br />
-                <span className="animate-[code-6_10s_infinite]">
-                  Package published.
-                </span>
+
+              {/* Dashboard Content */}
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+                {/* Custom AI Solutions */}
+                <div className="rounded-lg bg-gradient-to-br from-orange-50 to-orange-100 p-4">
+                  <h3 className="text-sm font-semibold text-orange-800 mb-2">
+                    Custom AI Development
+                  </h3>
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-sm">
+                      <span className="text-gray-600">Solution Accuracy</span>
+                      <span className="font-medium text-orange-600">Highest levels</span>
+                    </div>
+                    <div className="h-2 bg-orange-200 rounded-full">
+                      <div className="h-2 bg-orange-600 rounded-full w-full"></div>
+                    </div>
+                    <div className="text-xs text-gray-500">
+                      Dozens of bespoke models crafted
+                    </div>
+                  </div>
+                </div>
+
+                {/* Enterprise Solutions */}
+                <div className="rounded-lg bg-gradient-to-br from-blue-50 to-blue-100 p-4">
+                  <h3 className="text-sm font-semibold text-blue-800 mb-2">
+                    Enterprise AI Systems
+                  </h3>
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-sm">
+                      <span className="text-gray-600">Process Efficiency</span>
+                      <span className="font-medium text-blue-600">Exceptional gains</span>
+                    </div>
+                    <div className="h-2 bg-blue-200 rounded-full">
+                      <div className="h-2 bg-blue-600 rounded-full w-full"></div>
+                    </div>
+                    <div className="text-xs text-gray-500">
+                      Seamless cross-industry integration
+                    </div>
+                  </div>
+                </div>
+
+                {/* Specialized Domains */}
+                <div className="rounded-lg bg-gradient-to-br from-green-50 to-green-100 p-4">
+                  <h3 className="text-sm font-semibold text-green-800 mb-2">
+                    Domain-Specific AI
+                  </h3>
+                  <div className="space-y-2">
+                    <div className="flex justify-between text-sm">
+                      <span className="text-gray-600">Client Satisfaction</span>
+                      <span className="font-medium text-green-600">Outstanding</span>
+                    </div>
+                    <div className="h-2 bg-green-200 rounded-full">
+                      <div className="h-2 bg-green-600 rounded-full w-full"></div>
+                    </div>
+                    <div className="text-xs text-gray-500">
+                      Applied across healthcare, finance, and security
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Client Industries */}
+              <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3">
+                <div className="text-center">
+                  <div className="text-lg font-semibold text-gray-800">
+                    Healthcare Focus
+                  </div>
+                  <div className="text-xs text-gray-600">Bespoke AI solutions</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-lg font-semibold text-gray-800">
+                    Defense & Security
+                  </div>
+                  <div className="text-xs text-gray-600">Advanced analytics</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-lg font-semibold text-gray-800">
+                    Enterprise Scale
+                  </div>
+                  <div className="text-xs text-gray-600">Robust integrations</div>
+                </div>
+              </div>
+
+              {/* Status Indicators */}
+              <div className="mt-6 flex items-center justify-center space-x-6 text-xs">
+                <div className="flex items-center space-x-2">
+                  <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse"></div>
+                  <span className="text-gray-600">Active Development</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="h-2 w-2 rounded-full bg-blue-500"></div>
+                  <span className="text-gray-600">Multi-Domain Expertise</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <div className="h-2 w-2 rounded-full bg-orange-500"></div>
+                  <span className="text-gray-600">Custom Solutions</span>
+                </div>
               </div>
             </div>
           </div>

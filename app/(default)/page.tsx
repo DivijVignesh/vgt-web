@@ -16,21 +16,15 @@ import FAQ from "@/components/faq";
 export default function Home() {
   return (
     <>
-    <Hero />
+      <Hero />
       <VisionMission />
-      <BusinessCategories />
+      {/* <BusinessCategories /> */}
       <TechStack />
       <FeaturesPlanet />
       <Leadership />
-      <LargeTestimonial />
-      <FAQ />
-      <Contact/>
-
-      {/* <Hero />
-      <BusinessCategories />
-      <FeaturesPlanet />
-      <LargeTestimonial />
-      <Cta /> */}
+      {/* <LargeTestimonial /> */}
+      {/* <FAQ /> */}
+      <Contact />
     </>
   );
 }
