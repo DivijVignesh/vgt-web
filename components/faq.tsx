@@ -19,7 +19,7 @@ export default function FAQ() {
     <section id="faq" className="py-20 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-secondary mb-6 text-center">Frequently Asked Questions</h2>
-        <Accordion title={items[0].title} id={items[0].id} />
+        {/* <Accordion title={items[0].title} id={items[0].id} /> */}
       </div>
     </section>
   )
